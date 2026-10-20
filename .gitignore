@@ -1,0 +1,29 @@
+
+# dependencies
+node_modules/
+
+# expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# native
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# macOS
+.DS_Store
+
+# local env files (never commit real keys — see env.example)
+.env
+.env.local
+.env.*.local
+
+
+# teaching materials
+

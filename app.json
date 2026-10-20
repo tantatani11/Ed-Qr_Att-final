@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "QR-ATT",
+"slug": "QR-ATT",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "qr-attendance",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+"android": {
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.tristangarcia.QRATT"
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      "expo-sqlite",
+      "@react-native-community/datetimepicker",
+      "expo-secure-store",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow QR-ATT to access your camera to scan attendance QR codes."
+        }
+      ]
+    ],
+    "experiments": {
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+"projectId": "5334731c-006c-4800-8117-3decfc3af28d"
+      }
+    }
+  }
+}
